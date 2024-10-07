@@ -1,6 +1,7 @@
 {
-  "name": "@zeroai/source",
-  "version": "0.0.0",
+  "name": "zeroai",
+  "version": "0.0.1",
+  "description": "A suite of AI tools crafted to help you build smarter with AI, all through an intuitive and user-friendly interface.",
   "license": "MIT",
   "scripts": {
     "dev": "nx dev",
@@ -8,19 +9,23 @@
     "start": "nx start",
     "test": "nx test"
   },
-  "private": true,
   "dependencies": {
+    "@ai-sdk/openai": "^0.0.66",
     "@nextui-org/react": "^2.4.8",
     "@tanstack/react-query": "^5.59.0",
     "@trpc/client": "^11.0.0-rc.561",
+    "@trpc/react-query": "^11.0.0-rc.563",
     "@trpc/server": "^11.0.0-rc.561",
+    "ai": "^3.4.9",
     "framer-motion": "^11.11.1",
     "lucide-react": "^0.447.0",
     "next": "14.2.3",
     "next-themes": "^0.3.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "sonner": "^1.5.0"
+    "react-markdown": "^9.0.1",
+    "sonner": "^1.5.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@eslint/compat": "^1.1.1",

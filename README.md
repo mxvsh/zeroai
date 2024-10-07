@@ -1,81 +1,72 @@
-# Zeroai
+<h1 align="center">ZeroAI</h1>
+<p align="center">
+Get your job done with AI in an interactive and easy way.
+</p>
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+<img src="public/zeroai-banner.png"/>
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+> [!NOTE]  
+> This project is still under development. You can contribute by adding new tools, fixing bugs, or improving the existing code. Feel free to open an issue or a pull request. 😊
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/next?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+## Table of Contents
 
-## Finish your CI setup
+- [About](#about)
+- [Available Tools](#available-tools)
+- [Running Locally](#running-locally)
+- [Adding a new tool](#adding-a-new-tool)
+- [Help](#help)
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/mHUwk31mfo)
+## About
 
-## Run tasks
+ZeroAI is a collection of AI tools (eg. Email Writer, MCQ generator, YouTube Summarizer, etc.) that helps you get your job done with AI in an interactive and easy way. It is a web application built using Next.js, Tailwind CSS, and AI SDK.
 
-To run the dev server for your app, use:
+You can completely run this application on your local machine without any internet connection and use it for free. It supports Ollama and OpenAI API for generating content.
 
-```sh
-npx nx dev zeroai
+## Available Tools
+
+I am planning to add more tools in the future. Here is the list of tools that are currently available (or planned to be available):
+
+- [x] Email Writer
+- [] Code Generator
+- [] Grammar Checker
+- [] Image Generator
+- [] Text Summarizer
+- [] MCQ Generator
+- [] Question Answering
+- [] YouTube Summarizer
+- [] Text Translator
+
+## Running Locally
+
+First, clone the repository:
+
+```bash
+git clone git@github.com:mxvsh/zeroai.git
 ```
 
-To create a production bundle:
+Then, install the dependencies:
 
-```sh
-npx nx build zeroai
+```bash
+bun install
 ```
 
-To see all available targets to run for a project, run:
+Create a `.env.local` file in the root directory and add the following environment variables:
 
-```sh
-npx nx show project zeroai
+```bash
+PROVIDER=openai
+OPENAI_API_KEY=
 ```
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+Finally, run the development server:
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Add new projects
-
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
-
-Use the plugin's generator to create new projects.
-
-To generate a new application, use:
-
-```sh
-npx nx g @nx/next:app demo
+```bash
+bun dev
 ```
 
-To generate a new library, use:
+## Adding a new tool
 
-```sh
-npx nx g @nx/react:lib mylib
-```
+To add a new tool, create a new folder in the `tools` directory with `index.ts`, `page.tsx` and `action.ts`. You can refer to the existing tools for the structure.
 
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
+## Help
 
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/nx-api/next?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+If you have any questions or need help, feel free to open an issue or reach out to me on [Twitter](https://twitter.com/monawwarx) or [Telegram](https://t.me/monawwarx). 🙂
