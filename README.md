@@ -27,14 +27,14 @@ You can completely run this application on your local machine without any intern
 I am planning to add more tools in the future. Here is the list of tools that are currently available (or planned to be available):
 
 - [x] Email Writer
-- [] Code Generator
-- [] Grammar Checker
-- [] Image Generator
-- [] Text Summarizer
-- [] MCQ Generator
-- [] Question Answering
-- [] YouTube Summarizer
-- [] Text Translator
+- [ ] Code Generator
+- [ ] Grammar Checker
+- [ ] Image Generator
+- [ ] Text Summarizer
+- [ ] MCQ Generator
+- [ ] Question Answering
+- [ ] YouTube Summarizer
+- [ ] Text Translator
 
 ## Running Locally
 
