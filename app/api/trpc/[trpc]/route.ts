@@ -1,4 +1,5 @@
 import { appRouter } from '#/trpc/init';
+
 import { fetchRequestHandler } from '@trpc/server/adapters/fetch';
 
 async function handler(req: Request) {
