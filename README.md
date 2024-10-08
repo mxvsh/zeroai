@@ -1,8 +1,3 @@
-<h1 align="center">ZeroAI</h1>
-<p align="center">
-Get your job done with AI in an interactive and easy way.
-</p>
-
 <img src="public/zeroai-banner.png"/>
 
 > [!NOTE]  
